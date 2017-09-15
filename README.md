@@ -1,7 +1,7 @@
 # gaida
 Simple Python GUI application to interface a LIFX Color 1000
 
-My use case requires an access point to be set up.
+My use case requires an access point to be set up. \n
 $ sudo add-apt-repository ppa:nilarimogard/webupd8
 $ sudo apt-get update
 $ sudo apt-get install ap-hotspot
