@@ -93,7 +93,6 @@ states = lazylights.get_state(bulbs, timeout=5)
 print "Found bulb(s): ", bulbs, "\nState(s): ", states
 if len(states) > 0 :
   br = states[0].kelvin 
-  print( "Set BR to " + str(br))
 
 MAXIMUM = 40.0
 buffSize = 30
@@ -200,19 +199,13 @@ def resend():
 
       top.update_idletasks()
       top.update()
-    #if timer() > LAST_UPDATE + MIN_REFRESH_INTERVAL:
       rgb = (float(rCanStrVar.get()) / BAR_WIDTH, float(gCanStrVar.get()) / BAR_WIDTH, float(bCanStrVar.get()) / BAR_WIDTH)
       hsb = colorsys.rgb_to_hsv(rgb[0], rgb[1], rgb[2])
 
-      print 'HSB', hsb[0]*360, hsb[1], hsb[2]
-      print 'From RGB', rgb[0], rgb[1], rgb[2]
-      
       if LIFX_CONNECT:
           print("Updating light(s)...")
           lazylights.set_state(bulbs, hsb[0]*360, hsb[1], hsb[2], br, 500)
           states = lazylights.refresh(expected_bulbs=1, timeout=1)
-          print("new state " + str(lazylights.get_state(bulbs, timeout=5)))
-
 
 
 def updateHeight(can, val, _fill):
@@ -222,7 +215,6 @@ def updateHeight(can, val, _fill):
     can.coords(can.find_withtag("colorPoly"), 0, 0, 0, barHeight, val, barHeight, val, 0)
     can.coords(can.find_withtag("blackPoly"), val, 0, val, barHeight, BAR_WIDTH, barHeight, BAR_WIDTH, 0)
 
-    
     if can == rCan:
         rCanStrVar.set(str(int(round(val))))
     elif can == gCan:
@@ -237,7 +229,7 @@ def updateHeight(can, val, _fill):
         top.update()
         LAST_UPDATE = timer()
         if float(bCanStrVar.get()) != 0:
-          print("LAST_UPDATE " + str(LAST_UPDATE) + " " + str(float(bCanStrVar.get()) / BAR_WIDTH))
+          # this conditional fixes bars being out of sync with light
           resend()
 
 # Set GUI bar state to that of light:
@@ -245,11 +237,9 @@ if len(states) > 0:
   _max = 16.**4
   s = states[0]
   rgb = colorsys.hsv_to_rgb(s.hue/_max, s.saturation/_max, s.brightness/_max)
-  print("Pre seeding to " + str((rgb[0] * BAR_WIDTH, rgb[1]*BAR_WIDTH, rgb[2]*BAR_WIDTH)))
   updateHeight(rCan, rgb[0] * BAR_WIDTH, 'red')
   updateHeight(gCan, rgb[1] * BAR_WIDTH, 'green')
   updateHeight(bCan, rgb[2] * BAR_WIDTH, 'blue')
-  print("Pre seed " + str(float(bCanStrVar.get()) / BAR_WIDTH))
 
 #Attach Motion Event Listeners
 
