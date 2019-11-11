@@ -1,11 +1,11 @@
+ 
+import colorsys
+import lazylights
+import requests
 import time
 import threading
-
 import pywemo
-
 from timeit import default_timer as timer
-import lazylights
-import colorsys
 
 try:
    import Tkinter as tk
@@ -19,28 +19,45 @@ LIFX_CONNECT = True # should make LIFX connection
 global top
 global LAST_UPDATE
 
+global tv_ip
+tv_ip = '192.168.1.150'
+
+### GUI INIT -- must run before any impl created
+top = tk.Tk()
+#top.attributes("-fullscreen", True)
+top.configure(background = 'black')
+w, h = top.winfo_screenwidth()/1.25, top.winfo_screenheight()/1.25
+#top.overrideredirect(1)
+top.geometry("%dx%d+0+0" % (w, h))
+top.focus_set()
+top.bind('<Escape>', lambda e: e.widget.quit())# top.destroy())
+
 
 class WemoImpl(object):
+  global top
   def __init__(self):
     self.logname = "[Wemo] "
     self.tv_id="1"
-    self.rex_id="2"
+    self.rex_id="Rex"
     self.ip = None #"10.42.0.39"
+    self.btn_bg = '#001a00'
+    self.btn_fg = '#004d00'
 
     self.devices = {}
     self.refreshing = False
     self.refresh_devices_async()
+    self.init_gui()
 
   def refresh_devices_async(self):
-    print("Refreshing devices...")
+    print(self.logname + "Refreshing devices...")
     self.refreshing = True
     this = self
     def _run():
       try:
         ds = pywemo.discover_devices()
-        print(this.logname + "Done discovery!")
+        print(self.logname + "Done discovery!")
         if ds == []:
-          print(this.logname + "No devices found.")
+          print(self.logname + "No devices found.")
           if this.ip is not None:
             # Nothing returned; attempt manual discovery via IP
             # TODO check if this works
@@ -55,82 +72,136 @@ class WemoImpl(object):
         this.devices = { d : d.get_state(force_update=True) for d in ds }
         print(this.logname + "Got Device(s): " + str(this.devices))
         this.last_update = time.time()
-      except:
-        print(this.logname + "DISCOVERY FAILED!")
+        this.ds = ds
+      except Exception as e:
+        print(this.logname + "DISCOVERY FAILED! " + str(e))
+        this.ds = []
 
       this.refreshing = False
 
     t = threading.Thread(target=_run)
-    #t.daemon = True
+    #t.daemon = True ## ? async seems to work fine without this
     t.start()
 
-  def toggle_tv(self):
-    print("Toggling TV lights...")
+  def toggle_tv_lights(self):
+    print(self.logname + "Toggling TV lights...")
     for k in self.devices:
       if self.tv_id in str(k):
         k.toggle()
-        print("Toggled TV lights.")
+        print(self.logname + "Toggled TV lights.")
+        self.color_logic(self.tv_id)
         return
 
   def toggle_tank(self):
-    print("Toggling Rex's lights...")
+    print(self.logname + "Toggling Rex's lights...")
     for k in self.devices:
       if self.rex_id in str(k):
         k.toggle()
-        print("Toggled Rex's lights.")
+        print(self.logname + "Toggled Rex's lights.")
+        self.devices = { d : d.get_state(force_update=True) for d in self.ds }
+        self.color_logic(self.rex_id)
         return
 
+  def color_logic(self, device_id=''):
+    ''' handles state-based updates to the GUI elements for this implementation 
+     might be better to parameterize device itself, but TODO
+    '''
+
+    if not self.gui_init_complete:
+       self.init_gui()
+
+    if device_id is None:
+       device_id = ''
+
+    for k in self.devices:
+      # do for all known devices if unspecified
+      if len(device_id) == 0 or device_id in str(k):
+        istate = self.devices[k]
+        if istate == 8:
+          # mark on button, ensure only one btn can be on at once
+          self.gui_elements[0].config(bg="#ffffff")
+          self.gui_elements[1].config(bg=self.btn_bg)
+        elif istate == 0:
+           # mark off button, clear on button
+           self.gui_elements[1].config(bg="#ffffff")
+           self.gui_elements[0].config(bg=self.btn_bg)
+           
+  def init_gui(self):
+    global top
+    on = tk.Button(top, text="Tank Lights On", \
+                   command=self.toggle_tank, bg=self.btn_bg, fg=self.btn_fg)
+    off = tk.Button(top, text="Tank Lights Off", \
+                    command=self.toggle_tank, bg=self.btn_bg, fg=self.btn_fg)
+
+    on.grid(column = 1, columnspan = 1, row = 6, sticky='nsew')
+    off.grid(column = 0, columnspan = 1, row=6, sticky='nsew')
+    self.gui_elements = [on, off]
+    self.gui_init_complete = True
+
+  def get_elements(self):
+    ''' returns the GUI elements associated with this implementation '''
+    return self.gui_elements
+
+
+def toggle_tv_power():
+   global tv_ip
+   print("Toggling TV power...")
+   requests.get('http://' + tv_ip + "/tv_pow")
 
 MIN_REFRESH_INTERVAL = 0.5
 LAST_UPDATE = 0
 lastUpdateTimestamp = 0
 
-impl = WemoImpl()
 
 global br
-bulbs = lazylights.find_bulbs(expected_bulbs=1, timeout=5)
-states = lazylights.get_state(bulbs, timeout=5)
-print "Found bulb(s): ", bulbs, "\nState(s): ", states
-if len(states) > 0 :
-  br = states[0].kelvin 
+class LIFXImpl(object):
+   global br
+   def __init__(self):
+      this = self
+      this.logname = "[LIFX] "
+      print(this.logname + "Starting bulb discovery...")
+      this.bulbs = lazylights.find_bulbs(expected_bulbs=1, timeout=5)
+      this.states = lazylights.get_state(this.bulbs, timeout=5)
 
-MAXIMUM = 40.0
-buffSize = 30
+      print(this.logname + "Found: \tBulb(s): " + str(this.bulbs) + \
+            str("\n\t\tState(s): ") + " " + str(this.states))
+      if len(this.states) > 0 :
+         br = this.states[0].kelvin 
+
+   def color_logic(self):
+      ''' handles state-based updates to the GUI elements for this implementation '''
+      pass
+
+   def get_elements(self):
+      ''' returns the GUI elements associated with this implementation '''
+      pass
+m_impl = WemoImpl()
+m_lifx = LIFXImpl()
 
 
-top = tk.Tk()
-#top.attributes("-fullscreen", True)
-top.configure(background = 'black')
-w, h = top.winfo_screenwidth()/1.25, top.winfo_screenheight()/1.25
-#top.overrideredirect(1)
-top.geometry("%dx%d+0+0" % (w, h))
-top.focus_set()
+#### GUI 
 
-top.bind('<Escape>', lambda e: e.widget.quit())# top.destroy())
+#def turnOn():
+#    lazylights.setpower(bulbs, True)
 
-def turnOn():
-    lazylights.setpower(bulbs, True)
+#def turnOff():
+#    lazylights.setpower(bulbs, False)
 
-def turnOff():
-    lazylights.setpower(bulbs, False)
+#onButton = tk.Button(top, text="on", command=turnOn, bg="#001a00", fg='#004d00')
+#onButton.grid(column = 1, columnspan = 1, row = 0, sticky='nsew')
 
-onButton = tk.Button(top, text="on", command=turnOn, bg="#001a00", fg='#004d00')
-onButton.grid(column = 1, columnspan = 1, row = 0, sticky='nsew')
+offButton = tk.Button(top, text="TV POWER", command=toggle_tv_power, bg="#001a00", fg='#004d00')
+offButton.grid(column = 0, columnspan = 2, row = 0, sticky='nsew')
 
-offButton = tk.Button(top, text="off", command=turnOff, bg="#001a00", fg='#004d00')
-offButton.grid(column = 0, columnspan = 1, row = 0, sticky='nsew')
-
-filterOnButton = tk.Button(top, text="TV Lights On", command=impl.toggle_tv, bg="#001a00", fg='#004d00')
+filterOnButton = tk.Button(top, text="TV Lights On", command=m_impl.toggle_tv_lights, bg="#001a00", fg='#004d00')
 filterOnButton.grid(column = 1, columnspan = 1, row = 5, sticky='nsew')
 
-filterOffButton = tk.Button(top, text="TV Lights Off", command=impl.toggle_tv, bg="#001a00", fg='#004d00')
+filterOffButton = tk.Button(top, text="TV Lights Off", command=m_impl.toggle_tv_lights, bg="#001a00", fg='#004d00')
 filterOffButton.grid(column = 0, columnspan = 1, row = 5, sticky='nsew')
 
-tankLightOnButton = tk.Button(top, text="Tank Lights On", command=impl.toggle_tank, bg="#001a00", fg='#004d00')
-tankLightOnButton.grid(column = 1, columnspan = 1, row = 6, sticky='nsew')
-
-tankLightOffButton = tk.Button(top, text="Tank Lights Off", command=impl.toggle_tank, bg="#001a00", fg='#004d00')
-tankLightOffButton.grid(column = 0, columnspan = 1, row = 6, sticky='nsew')
+m_impl.color_logic(m_impl.rex_id)
+top.update()
+#tankLightOffButton.grid(column = 0, columnspan = 1, row = 6, sticky='nsew')
 
 
 #quitButton = tk.Button(top, text="quit", command=lambda: top.quit() , bg="#ff00ff")
@@ -192,7 +263,6 @@ top.rowconfigure(5, weight=1)
 top.rowconfigure(6, weight=1)
 
 def resend():
-
       global br
       global states
       print("resend!")
@@ -204,7 +274,7 @@ def resend():
 
       if LIFX_CONNECT:
           print("Updating light(s)...")
-          lazylights.set_state(bulbs, hsb[0]*360, hsb[1], hsb[2], br, 500)
+          lazylights.set_state(m_lifx.bulbs, hsb[0]*360, hsb[1], hsb[2], 1000, 500)
           states = lazylights.refresh(expected_bulbs=1, timeout=1)
 
 
@@ -232,10 +302,11 @@ def updateHeight(can, val, _fill):
           # this conditional fixes bars being out of sync with light
           resend()
 
+
 # Set GUI bar state to that of light:
-if len(states) > 0:
+if len(m_lifx.states) > 0:
   _max = 16.**4
-  s = states[0]
+  s = m_lifx.states[0]
   rgb = colorsys.hsv_to_rgb(s.hue/_max, s.saturation/_max, s.brightness/_max)
   updateHeight(rCan, rgb[0] * BAR_WIDTH, 'red')
   updateHeight(gCan, rgb[1] * BAR_WIDTH, 'green')
@@ -250,7 +321,6 @@ rCan.tag_bind(rCan.find_withtag("blackPoly"), "<B1-Motion>", lambda event:update
 #gCan.bind("<Button-1>", lambda event:updateHeight(event.widget, event.x, 'green'))
 gCan.tag_bind(gCan.find_withtag("colorPoly"), "<B1-Motion>", lambda event:updateHeight(gCan, event.x, 'green'))
 gCan.tag_bind(gCan.find_withtag("blackPoly"), "<B1-Motion>", lambda event: updateHeight(gCan, event.x, 'green'))
-
 
 #bCan.bind("<Button-1>", lambda event:updateHeight(event.widget, event.x, 'blue'))
 bCan.tag_bind(bCan.find_withtag("colorPoly"), "<B1-Motion>", lambda event:updateHeight(bCan, event.x, 'blue'))
