@@ -1,0 +1,934 @@
+[01/19/2020 11:45:16] Created Cleaning instance:
+	Name: table
+	Date: 01/19
+	Next: 02/02
+[01/19/2020 11:45:16] Created Cleaning instance:
+	Name: desk
+	Date: 01/19
+	Next: 02/02
+[01/19/2020 11:45:16] Created Sweeping instance:
+	Name: hallway
+	Date: 01/17
+	Next: 01/31
+[01/19/2020 11:45:23] Created Cleaning instance:
+	Name: table
+	Date: 01/19
+	Next: 02/02
+[01/19/2020 11:45:23] Created Cleaning instance:
+	Name: desk
+	Date: 01/19
+	Next: 02/02
+[01/19/2020 11:45:23] Created Sweeping instance:
+	Name: hallway
+	Date: 01/17
+	Next: 01/31
+[01/19/2020 11:45:51] Created Cleaning instance:
+	Name: table
+	Date: 01/19
+	Next: 02/02
+[01/19/2020 11:45:51] Created Cleaning instance:
+	Name: desk
+	Date: 01/19
+	Next: 02/02
+[01/19/2020 11:45:51] Created Sweeping instance:
+	Name: hallway
+	Date: 01/17
+	Next: 01/31
+[01/19/2020 11:52:05] Created Cleaning instance:
+	Name: table
+	Date: 01/19
+	Next: 02/02
+[01/19/2020 11:52:05] Created Cleaning instance:
+	Name: desk
+	Date: 01/19
+	Next: 02/02
+[01/19/2020 11:52:05] Created Sweeping instance:
+	Name: hallway
+	Date: 01/17
+	Next: 01/31
+[01/19/2020 11:59:36] Created Cleaning instance:
+	Name: table
+	Date: 01/19
+	Next: 02/02
+[01/19/2020 11:59:36] Created Cleaning instance:
+	Name: desk
+	Date: 01/19
+	Next: 02/02
+[01/19/2020 11:59:36] Created Sweeping instance:
+	Name: hallway
+	Date: 01/17
+	Next: 01/31
+[01/19/2020 12:00:43] Created Cleaning instance:
+	Name: table
+	Date: 01/19
+	Next: 02/02
+[01/19/2020 12:00:43] Created Cleaning instance:
+	Name: desk
+	Date: 01/19
+	Next: 02/02
+[01/19/2020 12:00:43] Created Sweeping instance:
+	Name: hallway
+	Date: 01/17
+	Next: 01/31
+[01/19/2020 12:00:43] Recorded Sweeping task 'hallway' as having been completed on 1579453243.87
+[01/19/2020 12:02:59] Recorded Cleaning task 'table' as having been completed on 1579107779.58
+[01/19/2020 12:04:20] Recorded Sweeping task 'hallway' as having been completed on 1575479060.05
+[01/19/2020 12:29:24] Created Cleaning instance:
+
+	Name: Toilet
+	Last: 01/19
+	Next: 02/02
+
+[01/19/2020 12:29:24] Created Cleaning instance:
+
+	Name: Sink & Fixtures
+	Last: 01/19
+	Next: 02/02
+
+[01/19/2020 12:29:24] Created Cleaning instance:
+
+	Name: Mirror
+	Last: 01/19
+	Next: 02/09
+
+[01/19/2020 12:29:24] Created Cleaning instance:
+
+	Name: Tub
+	Last: 01/19
+	Next: 03/04
+
+[01/19/2020 12:29:24] Created Cleaning instance:
+
+	Name: Mold Control: Bath Tile
+	Last: 01/19
+	Next: 01/30
+
+[01/19/2020 12:29:24] Created Cleaning instance:
+
+	Name: Mold Control: Kitchen Sink
+	Last: 01/19
+	Next: 01/30
+
+[01/19/2020 12:29:24] Created Cleaning instance:
+
+	Name: Kitchen Table
+	Last: 01/19
+	Next: 02/18
+
+[01/19/2020 12:29:24] Created Cleaning instance:
+
+	Name: Kitchen Counters
+	Last: 01/19
+	Next: 02/09
+
+[01/19/2020 12:29:24] Created Cleaning instance:
+
+	Name: Oven & Stove
+	Last: 01/19
+	Next: 02/09
+
+[01/19/2020 12:29:24] Created Cleaning instance:
+
+	Name: Desk
+	Last: 01/19
+	Next: 02/02
+
+[01/19/2020 12:29:24] Created Dusting instance:
+
+	Name: Bedroom: Lights, Sills, Doors
+	Last: 01/19
+	Next: 02/18
+
+[01/19/2020 12:29:24] Created Dusting instance:
+
+	Name: LR: Lights, Sills, Doors, Media Center
+	Last: 01/19
+	Next: 02/18
+
+[01/19/2020 12:29:24] Created Dusting instance:
+
+	Name: Bathroom: Lights, Doors, Heater
+	Last: 01/19
+	Next: 02/18
+
+[01/19/2020 12:29:24] Created Sweeping instance:
+
+	Name: LR
+	Last: 01/19
+	Next: 02/13
+
+[01/19/2020 12:29:24] Created Sweeping instance:
+
+	Name: Hallway
+	Last: 01/19
+	Next: 02/09
+
+[01/19/2020 12:29:24] Created Sweeping instance:
+
+	Name: Kitchen
+	Last: 01/19
+	Next: 02/09
+
+[01/19/2020 12:29:24] Created Sweeping instance:
+
+	Name: Bathroom
+	Last: 01/19
+	Next: 02/13
+
+[01/19/2020 12:29:24] Created Sweeping instance:
+
+	Name: Bedroom
+	Last: 01/19
+	Next: 02/09
+
+[01/19/2020 12:29:24] Created Vacuuming instance:
+
+	Name: Hallway
+	Last: 01/19
+	Next: 02/09
+
+[01/19/2020 12:29:24] Created Vacuuming instance:
+
+	Name: Bedroom
+	Last: 01/19
+	Next: 02/02
+
+[01/19/2020 12:29:26] Created Cleaning instance:
+
+	Name: Toilet
+	Last: 01/19
+	Next: 02/02
+
+[01/19/2020 12:29:26] Created Cleaning instance:
+
+	Name: Sink & Fixtures
+	Last: 01/19
+	Next: 02/02
+
+[01/19/2020 12:29:26] Created Cleaning instance:
+
+	Name: Mirror
+	Last: 01/19
+	Next: 02/09
+
+[01/19/2020 12:29:26] Created Cleaning instance:
+
+	Name: Tub
+	Last: 01/19
+	Next: 03/04
+
+[01/19/2020 12:29:26] Created Cleaning instance:
+
+	Name: Mold Control: Bath Tile
+	Last: 01/19
+	Next: 01/30
+
+[01/19/2020 12:29:26] Created Cleaning instance:
+
+	Name: Mold Control: Kitchen Sink
+	Last: 01/19
+	Next: 01/30
+
+[01/19/2020 12:29:26] Created Cleaning instance:
+
+	Name: Kitchen Table
+	Last: 01/19
+	Next: 02/18
+
+[01/19/2020 12:29:26] Created Cleaning instance:
+
+	Name: Kitchen Counters
+	Last: 01/19
+	Next: 02/09
+
+[01/19/2020 12:29:26] Created Cleaning instance:
+
+	Name: Oven & Stove
+	Last: 01/19
+	Next: 02/09
+
+[01/19/2020 12:29:26] Created Cleaning instance:
+
+	Name: Desk
+	Last: 01/19
+	Next: 02/02
+
+[01/19/2020 12:29:26] Created Dusting instance:
+
+	Name: Bedroom: Lights, Sills, Doors
+	Last: 01/19
+	Next: 02/18
+
+[01/19/2020 12:29:26] Created Dusting instance:
+
+	Name: LR: Lights, Sills, Doors, Media Center
+	Last: 01/19
+	Next: 02/18
+
+[01/19/2020 12:29:26] Created Dusting instance:
+
+	Name: Bathroom: Lights, Doors, Heater
+	Last: 01/19
+	Next: 02/18
+
+[01/19/2020 12:29:26] Created Sweeping instance:
+
+	Name: LR
+	Last: 01/19
+	Next: 02/13
+
+[01/19/2020 12:29:26] Created Sweeping instance:
+
+	Name: Hallway
+	Last: 01/19
+	Next: 02/09
+
+[01/19/2020 12:29:26] Created Sweeping instance:
+
+	Name: Kitchen
+	Last: 01/19
+	Next: 02/09
+
+[01/19/2020 12:29:26] Created Sweeping instance:
+
+	Name: Bathroom
+	Last: 01/19
+	Next: 02/13
+
+[01/19/2020 12:29:26] Created Sweeping instance:
+
+	Name: Bedroom
+	Last: 01/19
+	Next: 02/09
+
+[01/19/2020 12:29:26] Created Vacuuming instance:
+
+	Name: Hallway
+	Last: 01/19
+	Next: 02/09
+
+[01/19/2020 12:29:26] Created Vacuuming instance:
+
+	Name: Bedroom
+	Last: 01/19
+	Next: 02/02
+
+[01/19/2020 12:29:33] Created Cleaning instance:
+
+	Name: Toilet
+	Last: 01/19
+	Next: 02/02
+
+[01/19/2020 12:29:33] Created Cleaning instance:
+
+	Name: Sink & Fixtures
+	Last: 01/19
+	Next: 02/02
+
+[01/19/2020 12:29:33] Created Cleaning instance:
+
+	Name: Mirror
+	Last: 01/19
+	Next: 02/09
+
+[01/19/2020 12:29:33] Created Cleaning instance:
+
+	Name: Tub
+	Last: 01/19
+	Next: 03/04
+
+[01/19/2020 12:29:33] Created Cleaning instance:
+
+	Name: Mold Control: Bath Tile
+	Last: 01/19
+	Next: 01/30
+
+[01/19/2020 12:29:33] Created Cleaning instance:
+
+	Name: Mold Control: Kitchen Sink
+	Last: 01/19
+	Next: 01/30
+
+[01/19/2020 12:29:33] Created Cleaning instance:
+
+	Name: Kitchen Table
+	Last: 01/19
+	Next: 02/18
+
+[01/19/2020 12:29:33] Created Cleaning instance:
+
+	Name: Kitchen Counters
+	Last: 01/19
+	Next: 02/09
+
+[01/19/2020 12:29:33] Created Cleaning instance:
+
+	Name: Oven & Stove
+	Last: 01/19
+	Next: 02/09
+
+[01/19/2020 12:29:33] Created Cleaning instance:
+
+	Name: Desk
+	Last: 01/19
+	Next: 02/02
+
+[01/19/2020 12:29:33] Created Dusting instance:
+
+	Name: Bedroom: Lights, Sills, Doors
+	Last: 01/19
+	Next: 02/18
+
+[01/19/2020 12:29:33] Created Dusting instance:
+
+	Name: LR: Lights, Sills, Doors, Media Center
+	Last: 01/19
+	Next: 02/18
+
+[01/19/2020 12:29:33] Created Dusting instance:
+
+	Name: Bathroom: Lights, Doors, Heater
+	Last: 01/19
+	Next: 02/18
+
+[01/19/2020 12:29:33] Created Sweeping instance:
+
+	Name: LR
+	Last: 01/19
+	Next: 02/13
+
+[01/19/2020 12:29:33] Created Sweeping instance:
+
+	Name: Hallway
+	Last: 01/19
+	Next: 02/09
+
+[01/19/2020 12:29:33] Created Sweeping instance:
+
+	Name: Kitchen
+	Last: 01/19
+	Next: 02/09
+
+[01/19/2020 12:29:33] Created Sweeping instance:
+
+	Name: Bathroom
+	Last: 01/19
+	Next: 02/13
+
+[01/19/2020 12:29:33] Created Sweeping instance:
+
+	Name: Bedroom
+	Last: 01/19
+	Next: 02/09
+
+[01/19/2020 12:29:33] Created Vacuuming instance:
+
+	Name: Hallway
+	Last: 01/19
+	Next: 02/09
+
+[01/19/2020 12:29:33] Created Vacuuming instance:
+
+	Name: Bedroom
+	Last: 01/19
+	Next: 02/02
+
+[01/19/2020 12:29:34] Created Cleaning instance:
+
+	Name: Toilet
+	Last: 01/19
+	Next: 02/02
+
+[01/19/2020 12:29:34] Created Cleaning instance:
+
+	Name: Sink & Fixtures
+	Last: 01/19
+	Next: 02/02
+
+[01/19/2020 12:29:34] Created Cleaning instance:
+
+	Name: Mirror
+	Last: 01/19
+	Next: 02/09
+
+[01/19/2020 12:29:34] Created Cleaning instance:
+
+	Name: Tub
+	Last: 01/19
+	Next: 03/04
+
+[01/19/2020 12:29:34] Created Cleaning instance:
+
+	Name: Mold Control: Bath Tile
+	Last: 01/19
+	Next: 01/30
+
+[01/19/2020 12:29:34] Created Cleaning instance:
+
+	Name: Mold Control: Kitchen Sink
+	Last: 01/19
+	Next: 01/30
+
+[01/19/2020 12:29:34] Created Cleaning instance:
+
+	Name: Kitchen Table
+	Last: 01/19
+	Next: 02/18
+
+[01/19/2020 12:29:34] Created Cleaning instance:
+
+	Name: Kitchen Counters
+	Last: 01/19
+	Next: 02/09
+
+[01/19/2020 12:29:34] Created Cleaning instance:
+
+	Name: Oven & Stove
+	Last: 01/19
+	Next: 02/09
+
+[01/19/2020 12:29:34] Created Cleaning instance:
+
+	Name: Desk
+	Last: 01/19
+	Next: 02/02
+
+[01/19/2020 12:29:34] Created Dusting instance:
+
+	Name: Bedroom: Lights, Sills, Doors
+	Last: 01/19
+	Next: 02/18
+
+[01/19/2020 12:29:34] Created Dusting instance:
+
+	Name: LR: Lights, Sills, Doors, Media Center
+	Last: 01/19
+	Next: 02/18
+
+[01/19/2020 12:29:34] Created Dusting instance:
+
+	Name: Bathroom: Lights, Doors, Heater
+	Last: 01/19
+	Next: 02/18
+
+[01/19/2020 12:29:34] Created Sweeping instance:
+
+	Name: LR
+	Last: 01/19
+	Next: 02/13
+
+[01/19/2020 12:29:34] Created Sweeping instance:
+
+	Name: Hallway
+	Last: 01/19
+	Next: 02/09
+
+[01/19/2020 12:29:34] Created Sweeping instance:
+
+	Name: Kitchen
+	Last: 01/19
+	Next: 02/09
+
+[01/19/2020 12:29:34] Created Sweeping instance:
+
+	Name: Bathroom
+	Last: 01/19
+	Next: 02/13
+
+[01/19/2020 12:29:34] Created Sweeping instance:
+
+	Name: Bedroom
+	Last: 01/19
+	Next: 02/09
+
+[01/19/2020 12:29:34] Created Vacuuming instance:
+
+	Name: Hallway
+	Last: 01/19
+	Next: 02/09
+
+[01/19/2020 12:29:34] Created Vacuuming instance:
+
+	Name: Bedroom
+	Last: 01/19
+	Next: 02/02
+
+[01/19/2020 12:31:13] Created Cleaning instance:
+
+	Name: Toilet
+	Last: 01/19
+	Next: 02/02
+
+[01/19/2020 12:31:13] Created Cleaning instance:
+
+	Name: Sink & Fixtures
+	Last: 01/19
+	Next: 02/02
+
+[01/19/2020 12:31:13] Created Cleaning instance:
+
+	Name: Mirror
+	Last: 01/19
+	Next: 02/09
+
+[01/19/2020 12:31:13] Created Cleaning instance:
+
+	Name: Tub
+	Last: 01/19
+	Next: 03/04
+
+[01/19/2020 12:31:13] Created Cleaning instance:
+
+	Name: Mold Control: Bath Tile
+	Last: 01/19
+	Next: 01/30
+
+[01/19/2020 12:31:13] Created Cleaning instance:
+
+	Name: Mold Control: Kitchen Sink
+	Last: 01/19
+	Next: 01/30
+
+[01/19/2020 12:31:13] Created Cleaning instance:
+
+	Name: Kitchen Table
+	Last: 01/19
+	Next: 02/18
+
+[01/19/2020 12:31:13] Created Cleaning instance:
+
+	Name: Kitchen Counters
+	Last: 01/19
+	Next: 02/09
+
+[01/19/2020 12:31:13] Created Cleaning instance:
+
+	Name: Oven & Stove
+	Last: 01/19
+	Next: 02/09
+
+[01/19/2020 12:31:13] Created Cleaning instance:
+
+	Name: Desk
+	Last: 01/19
+	Next: 02/02
+
+[01/19/2020 12:31:13] Created Dusting instance:
+
+	Name: Bedroom: Lights, Sills, Doors
+	Last: 01/19
+	Next: 02/18
+
+[01/19/2020 12:31:13] Created Dusting instance:
+
+	Name: LR: Lights, Sills, Doors, Media Center
+	Last: 01/19
+	Next: 02/18
+
+[01/19/2020 12:31:13] Created Dusting instance:
+
+	Name: Bathroom: Lights, Doors, Heater
+	Last: 01/19
+	Next: 02/18
+
+[01/19/2020 12:31:13] Created Sweeping instance:
+
+	Name: LR
+	Last: 01/19
+	Next: 02/13
+
+[01/19/2020 12:31:13] Created Sweeping instance:
+
+	Name: Hallway
+	Last: 01/19
+	Next: 02/09
+
+[01/19/2020 12:31:13] Created Sweeping instance:
+
+	Name: Kitchen
+	Last: 01/19
+	Next: 02/09
+
+[01/19/2020 12:31:13] Created Sweeping instance:
+
+	Name: Bathroom
+	Last: 01/19
+	Next: 02/13
+
+[01/19/2020 12:31:13] Created Sweeping instance:
+
+	Name: Bedroom
+	Last: 01/19
+	Next: 02/09
+
+[01/19/2020 12:31:14] Created Vacuuming instance:
+
+	Name: Hallway
+	Last: 01/19
+	Next: 02/09
+
+[01/19/2020 12:31:14] Created Vacuuming instance:
+
+	Name: Bedroom
+	Last: 01/19
+	Next: 02/02
+
+[01/19/2020 12:32:33] Created Cleaning instance:
+
+	Name: Toilet
+	Last: 01/19
+	Next: 02/02
+
+[01/19/2020 12:32:33] Created Cleaning instance:
+
+	Name: Sink & Fixtures
+	Last: 01/19
+	Next: 02/02
+
+[01/19/2020 12:32:33] Created Cleaning instance:
+
+	Name: Mirror
+	Last: 01/19
+	Next: 02/09
+
+[01/19/2020 12:32:33] Created Cleaning instance:
+
+	Name: Tub
+	Last: 01/19
+	Next: 03/04
+
+[01/19/2020 12:32:33] Created Cleaning instance:
+
+	Name: Mold Control: Bath Tile
+	Last: 01/19
+	Next: 01/30
+
+[01/19/2020 12:32:33] Created Cleaning instance:
+
+	Name: Mold Control: Kitchen Sink
+	Last: 01/19
+	Next: 01/30
+
+[01/19/2020 12:32:33] Created Cleaning instance:
+
+	Name: Kitchen Table
+	Last: 01/19
+	Next: 02/18
+
+[01/19/2020 12:32:33] Created Cleaning instance:
+
+	Name: Kitchen Counters
+	Last: 01/19
+	Next: 02/09
+
+[01/19/2020 12:32:33] Created Cleaning instance:
+
+	Name: Oven & Stove
+	Last: 01/19
+	Next: 02/09
+
+[01/19/2020 12:32:33] Created Cleaning instance:
+
+	Name: Desk
+	Last: 01/19
+	Next: 02/02
+
+[01/19/2020 12:32:33] Created Dusting instance:
+
+	Name: Bedroom: Lights, Sills, Doors
+	Last: 01/19
+	Next: 02/18
+
+[01/19/2020 12:32:33] Created Dusting instance:
+
+	Name: LR: Lights, Sills, Doors, Media Center
+	Last: 01/19
+	Next: 02/18
+
+[01/19/2020 12:32:33] Created Dusting instance:
+
+	Name: Bathroom: Lights, Doors, Heater
+	Last: 01/19
+	Next: 02/18
+
+[01/19/2020 12:32:33] Created Sweeping instance:
+
+	Name: LR
+	Last: 01/19
+	Next: 02/13
+
+[01/19/2020 12:32:33] Created Sweeping instance:
+
+	Name: Hallway
+	Last: 01/19
+	Next: 02/09
+
+[01/19/2020 12:32:33] Created Sweeping instance:
+
+	Name: Kitchen
+	Last: 01/19
+	Next: 02/09
+
+[01/19/2020 12:32:33] Created Sweeping instance:
+
+	Name: Bathroom
+	Last: 01/19
+	Next: 02/13
+
+[01/19/2020 12:32:33] Created Sweeping instance:
+
+	Name: Bedroom
+	Last: 01/19
+	Next: 02/09
+
+[01/19/2020 12:32:33] Created Vacuuming instance:
+
+	Name: Hallway
+	Last: 01/19
+	Next: 02/09
+
+[01/19/2020 12:32:33] Created Vacuuming instance:
+
+	Name: Bedroom
+	Last: 01/19
+	Next: 02/02
+
+[01/19/2020 13:33:54] Recorded Vacuuming task 'Bedroom' as having been completed on 1579093200.0
+[01/19/2020 13:43:33] Created Cleaning instance:
+	Category: Cleaning	Name: Toilet					Last: 11/30	Next: 12/14
+[01/19/2020 13:43:33] Created Cleaning instance:
+	Category: Cleaning	Name: Sink & Fixtures				Last: 11/30	Next: 12/14
+[01/19/2020 13:43:33] Created Cleaning instance:
+	Category: Cleaning	Name: Mirror					Last: 11/30	Next: 12/21
+[01/19/2020 13:43:33] Created Cleaning instance:
+	Category: Cleaning	Name: Tub					Last: 11/30	Next: 01/14
+[01/19/2020 13:43:33] Created Cleaning instance:
+	Category: Cleaning	Name: Mold Control: Bath Tile			Last: 11/30	Next: 12/11
+[01/19/2020 13:43:33] Created Cleaning instance:
+	Category: Cleaning	Name: Mold Control: Kitchen Sink		Last: 11/30	Next: 12/11
+[01/19/2020 13:43:33] Created Cleaning instance:
+	Category: Cleaning	Name: Kitchen Table				Last: 11/30	Next: 12/30
+[01/19/2020 13:43:33] Created Cleaning instance:
+	Category: Cleaning	Name: Kitchen Counters				Last: 11/30	Next: 12/21
+[01/19/2020 13:43:33] Created Cleaning instance:
+	Category: Cleaning	Name: Oven & Stove				Last: 11/30	Next: 12/21
+[01/19/2020 13:43:33] Created Cleaning instance:
+	Category: Cleaning	Name: Desk					Last: 11/30	Next: 12/14
+[01/19/2020 13:43:33] Created Dusting instance:
+	Category: Dusting	Name: Bedroom: Lights, Sills, Doors		Last: 11/30	Next: 12/30
+[01/19/2020 13:43:33] Created Dusting instance:
+	Category: Dusting	Name: LR: Lights, Sills, Doors, Media Center	Last: 11/30	Next: 12/30
+[01/19/2020 13:43:33] Created Dusting instance:
+	Category: Dusting	Name: Bathroom: Lights, Doors, Heater		Last: 11/30	Next: 12/30
+[01/19/2020 13:43:33] Created Sweeping instance:
+	Category: Sweeping	Name: LR					Last: 11/30	Next: 12/25
+[01/19/2020 13:43:33] Created Sweeping instance:
+	Category: Sweeping	Name: Hallway					Last: 11/30	Next: 12/21
+[01/19/2020 13:43:33] Created Sweeping instance:
+	Category: Sweeping	Name: Kitchen					Last: 11/30	Next: 12/21
+[01/19/2020 13:43:33] Created Sweeping instance:
+	Category: Sweeping	Name: Bathroom					Last: 11/30	Next: 12/25
+[01/19/2020 13:43:33] Created Sweeping instance:
+	Category: Sweeping	Name: Bedroom					Last: 11/30	Next: 12/21
+[01/19/2020 13:43:33] Created Vacuuming instance:
+	Category: Vacuuming	Name: Hallway					Last: 11/30	Next: 12/21
+[01/19/2020 13:43:33] Created Vacuuming instance:
+	Category: Vacuuming	Name: Bedroom					Last: 11/30	Next: 12/14
+[01/19/2020 13:44:34] Created Cleaning instance:
+	Category: Cleaning	Name: Toilet					Last: 12/01	Next: 12/15
+[01/19/2020 13:44:34] Created Cleaning instance:
+	Category: Cleaning	Name: Sink & Fixtures				Last: 12/01	Next: 12/15
+[01/19/2020 13:44:34] Created Cleaning instance:
+	Category: Cleaning	Name: Mirror					Last: 12/01	Next: 12/22
+[01/19/2020 13:44:34] Created Cleaning instance:
+	Category: Cleaning	Name: Tub					Last: 12/01	Next: 01/15
+[01/19/2020 13:44:34] Created Cleaning instance:
+	Category: Cleaning	Name: Mold Control: Bath Tile			Last: 12/01	Next: 12/12
+[01/19/2020 13:44:34] Created Cleaning instance:
+	Category: Cleaning	Name: Mold Control: Kitchen Sink		Last: 12/01	Next: 12/12
+[01/19/2020 13:44:34] Created Cleaning instance:
+	Category: Cleaning	Name: Kitchen Table				Last: 12/01	Next: 12/31
+[01/19/2020 13:44:34] Created Cleaning instance:
+	Category: Cleaning	Name: Kitchen Counters				Last: 12/01	Next: 12/22
+[01/19/2020 13:44:34] Created Cleaning instance:
+	Category: Cleaning	Name: Oven & Stove				Last: 12/01	Next: 12/22
+[01/19/2020 13:44:34] Created Cleaning instance:
+	Category: Cleaning	Name: Desk					Last: 12/01	Next: 12/15
+[01/19/2020 13:44:34] Created Dusting instance:
+	Category: Dusting	Name: Bedroom: Lights, Sills, Doors		Last: 12/01	Next: 12/31
+[01/19/2020 13:44:34] Created Dusting instance:
+	Category: Dusting	Name: LR: Lights, Sills, Doors, Media Center	Last: 12/01	Next: 12/31
+[01/19/2020 13:44:34] Created Dusting instance:
+	Category: Dusting	Name: Bathroom: Lights, Doors, Heater		Last: 12/01	Next: 12/31
+[01/19/2020 13:44:34] Created Sweeping instance:
+	Category: Sweeping	Name: LR					Last: 12/01	Next: 12/26
+[01/19/2020 13:44:34] Created Sweeping instance:
+	Category: Sweeping	Name: Hallway					Last: 12/01	Next: 12/22
+[01/19/2020 13:44:34] Created Sweeping instance:
+	Category: Sweeping	Name: Kitchen					Last: 12/01	Next: 12/22
+[01/19/2020 13:44:34] Created Sweeping instance:
+	Category: Sweeping	Name: Bathroom					Last: 12/01	Next: 12/26
+[01/19/2020 13:44:34] Created Sweeping instance:
+	Category: Sweeping	Name: Bedroom					Last: 12/01	Next: 12/22
+[01/19/2020 13:44:34] Created Vacuuming instance:
+	Category: Vacuuming	Name: Hallway					Last: 12/01	Next: 12/22
+[01/19/2020 13:44:34] Created Vacuuming instance:
+	Category: Vacuuming	Name: Bedroom					Last: 12/01	Next: 12/15
+[01/19/2020 13:45:23] Recorded Vacuuming task 'Bedroom' as having been completed on 1579438800.0
+[01/19/2020 13:45:56] Recorded Sweeping task 'Bedroom' as having been completed on 1579438800.0
+[01/19/2020 13:49:00] Recorded Cleaning task 'Desk' as having been completed on 1578747600.0
+[01/19/2020 13:51:35] Recorded Cleaning task 'Sink & Fixtures' as having been completed on 1578747600.0
+[01/19/2020 13:52:06] Recorded Dusting task 'Bedroom: Lights, Sills, Doors' as having been completed on 1579438800.0
+[01/19/2020 13:52:46] Recorded Sweeping task 'Hallway' as having been completed on 1579438800.0
+[01/19/2020 13:55:05] Recorded Cleaning task 'Kitchen Counters' as having been completed on 1577883600.0
+[01/19/2020 14:11:50] Recorded Cleaning task 'Mold Control: Bath Tile' as having been completed on 1579442400.0
+[01/19/2020 14:13:37] Recorded Sweeping task 'Bathroom' as having been completed on 1579442400.0
+[01/19/2020 14:14:14] Recorded Vacuuming task 'Hallway' as having been completed on 1579442400.0
+[01/19/2020 14:14:47] Recorded Dusting task 'Bathroom: Lights, Doors, Heater' as having been completed on 1579442400.0
+[01/25/2020 14:45:03] Created Cleaning instance:
+	Category: Cleaning	Name: Range					Last: 12/01	Next: 01/30
+[01/25/2020 14:47:29] Created Cleaning instance:
+	Category: Cleaning	Name: Range (Top,LCD,Panels,Knobs,Handle)	Last: 12/01	Next: 01/30
+[01/25/2020 14:49:38] Created Cleaning instance:
+	Category: Cleaning	Name: Range (Top,LCD,Panels,Knobs,Handle)	Last: 01/25	Next: 03/25
+[01/25/2020 14:51:36] Created Cleaning instance:
+	Category: Cleaning	Name: Range (Top,LCD,Panels,Knobs,Handle)	Last: 01/25	Next: 03/25
+[01/25/2020 14:52:51] Created Cleaning instance:
+	Category: Cleaning	Name: Range (Top,LCD,Panels,Knobs,Handle)	Last: 01/25	Next: 03/25
+[01/25/2020 14:56:10] Recorded Cleaning task 'Range (Top,LCD,Panels,Knobs,Handle)' as having been completed on 1579874400.0
+[01/25/2020 15:01:04] Created Cleaning instance:
+	Category: Cleaning	Name: abc					Last: 01/20	Next: 01/27
+[01/25/2020 15:03:40] Created Cleaning instance:
+	Category: Cleaning	Name: Oven (Interior, Racks, Vents)		Last: 12/12	Next: 02/25
+[01/25/2020 15:26:32] Created Mopping instance:
+--------||--------------||----------------------------------------------||---------------||--------------|
+	|| Mopping	|| Kitchen					|| Last: 12/20   || Next: 01/26  |
+[01/25/2020 15:27:07] Created Mopping instance:
+--------||--------------||----------------------------------------------||---------------||--------------|
+	|| Mopping	|| Bathroom					|| Last: 01/02   || Next: 02/25  |
+[01/25/2020 15:27:53] Created Mopping instance:
+--------||--------------||----------------------------------------------||---------------||--------------|
+	|| Mopping	|| Kitchen					|| Last: 12/23   || Next: 01/29  |
+[01/25/2020 15:28:30] Created Mopping instance:
+--------||--------------||----------------------------------------------||---------------||--------------|
+	|| Mopping	|| LR						|| Last: 11/15   || Next: 01/14  |
+[01/25/2020 15:29:00] Created Mopping instance:
+--------||--------------||----------------------------------------------||---------------||--------------|
+	|| Mopping	|| LR						|| Last: 11/19   || Next: 03/03  |
+[01/29/2020 15:31:55] Created Cleaning instance:
+--------||--------------||----------------------------------------------||---------------||--------------|
+	|| Cleaning	|| Kitchen Counters 1 (left of oven)		|| Last: 12/15   || Next: 01/14  |
+[01/29/2020 15:32:43] Created Cleaning instance:
+--------||--------------||----------------------------------------------||---------------||--------------|
+	|| Cleaning	|| Kitchen Counters 2 (right of oven)		|| Last: 01/26   || Next: 02/09  |
+[01/29/2020 15:33:16] Created Cleaning instance:
+--------||--------------||----------------------------------------------||---------------||--------------|
+	|| Cleaning	|| Kitchen Counters 3 (near sink)		|| Last: 12/01   || Next: 12/31  |
+[02/01/2020 12:55:15] Recorded Cleaning task 'Kitchen Counters 1 (left of oven)' as having been completed on 1580558400.0
+[02/01/2020 12:55:28] Recorded Cleaning task 'Kitchen Counters 2 (right of oven)' as having been completed on 1580558400.0
+[02/01/2020 12:56:11] Recorded Sweeping task 'Kitchen' as having been completed on 1580558400.0
+[02/01/2020 12:56:31] Recorded Cleaning task 'Toilet' as having been completed on 1580558400.0
+[02/01/2020 12:56:48] Recorded Mopping task 'Kitchen' as having been completed on 1580558400.0
+[02/01/2020 12:57:14] Recorded Mopping task 'Bathroom' as having been completed on 1580558400.0
+[02/01/2020 12:57:54] Recorded Cleaning task 'Sink & Fixtures' as having been completed on 1580558400.0
+[02/01/2020 12:58:55] Recorded Cleaning task 'Desk' as having been completed on 1580472000.0
